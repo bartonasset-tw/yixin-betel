@@ -185,7 +185,73 @@ h1{font-size:clamp(52px,6vw,82px));margin:16px 0 8px;color:#f0c95b;letter-spacin
 .map-btn:hover{
   background:#15553b;
 }
+/* 門市快速查詢 */
+.quick-stores{
+  background:#0b2f22;
+  color:#f6f0df;
+  padding:78px 22px;
+  border-top:1px solid #7c652b;
+}
 
+.quick-inner{
+  max-width:1180px;
+  margin:0 auto;
+}
+
+.quick-label{
+  color:#d8b653;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:4px;
+  margin-bottom:10px;
+}
+
+.quick-stores h2{
+  margin:0;
+  color:#f0c95b;
+  font-size:40px;
+  letter-spacing:2px;
+}
+
+.quick-intro{
+  margin:12px 0 32px;
+  color:#c7d0ca;
+  font-size:16px;
+}
+
+.quick-list{
+  border-top:1px solid #557061;
+}
+
+.quick-item{
+  display:grid;
+  grid-template-columns:150px minmax(0,1fr) 120px;
+  gap:20px;
+  align-items:center;
+  padding:20px 4px;
+  border-bottom:1px solid #557061;
+}
+
+.quick-item strong{
+  color:#f0c95b;
+  font-size:19px;
+}
+
+.quick-item span{
+  color:#f2f0e8;
+  font-size:16px;
+}
+
+.quick-item a{
+  color:#f0c95b;
+  text-decoration:none;
+  font-weight:800;
+  text-align:right;
+}
+
+.quick-item a:hover{
+  text-decoration:underline;
+}
 footer{
   text-align:center;
   border-top:1px solid #7c652b;
@@ -198,6 +264,37 @@ footer strong{
 }
 
 @media(max-width:760px){
+  .quick-stores{
+  padding:52px 18px;
+}
+
+.quick-stores h2{
+  font-size:32px;
+}
+
+.quick-intro{
+  margin-bottom:24px;
+}
+
+.quick-item{
+  grid-template-columns:1fr;
+  gap:7px;
+  padding:18px 2px;
+}
+
+.quick-item strong{
+  font-size:20px;
+}
+
+.quick-item span{
+  font-size:15px;
+  line-height:1.6;
+}
+
+.quick-item a{
+  text-align:left;
+  margin-top:4px;
+}
 .about-yixin{
   padding:52px 18px;
 }
@@ -378,4 +475,64 @@ footer strong{
 <a href="https://maps.app.goo.gl/HM1z9P3YFXdnXRT5A" target="_blank" rel="noopener" class="map-btn">Google 地圖導航 ↗</a></article><article class="store">
 <img src="beigang.webp" alt="北港店門市照片" loading="lazy">
 <div class="store-body"><div><h3>北港店</h3><p>嘉義市北港路1456號</p></div>
-<a href="https://maps.app.goo.gl/LZ7biTL172uozZZo8" target="_blank" rel="noopener" class="map-btn">Google 地圖導航 ↗</a></div></article></div></main><footer><strong>一信檳榔</strong></body></html>
+<a href="https://maps.app.goo.gl/LZ7biTL172uozZZo8" target="_blank" rel="noopener" class="map-btn">Google 地圖導航 ↗</a></div></article></div></main>
+  <section class="quick-stores">
+  <div class="quick-inner">
+    <div class="quick-label">STORE GUIDE</div>
+    <h2>門市快速查詢</h2>
+    <p class="quick-intro">嘉義地區 8 個門市據點，快速查看地址與導航。</p>
+
+    <div class="quick-list">
+
+      <div class="quick-item">
+        <strong>中山店</strong>
+        <span>嘉義縣中埔鄉中山路五段906號</span>
+        <a href="https://www.google.com/maps/search/?api=1&query=嘉義縣中埔鄉中山路五段906號" target="_blank" rel="noopener">地圖導航 ↗</a>
+      </div>
+
+      <div class="quick-item">
+        <strong>大義店</strong>
+        <span>嘉義縣中埔鄉大義路28號</span>
+        <a href="https://www.google.com/maps/search/?api=1&query=嘉義縣中埔鄉大義路28號" target="_blank" rel="noopener">地圖導航 ↗</a>
+      </div>
+
+      <div class="quick-item">
+        <strong>民生南店</strong>
+        <span>嘉義市民生南路506號</span>
+        <a href="https://www.google.com/maps/search/?api=1&query=嘉義市民生南路506號" target="_blank" rel="noopener">地圖導航 ↗</a>
+      </div>
+
+      <div class="quick-item">
+        <strong>民生北店</strong>
+        <span>嘉義市民生北路108號</span>
+        <a href="https://www.google.com/maps/search/?api=1&query=嘉義市民生北路108號" target="_blank" rel="noopener">地圖導航 ↗</a>
+      </div>
+
+      <div class="quick-item">
+        <strong>柳林店</strong>
+        <span>嘉義縣水上鄉柳林村50號</span>
+        <a href="https://maps.app.goo.gl/f4fbYR244s4HTV716" target="_blank" rel="noopener">地圖導航 ↗</a>
+      </div>
+
+      <div class="quick-item">
+        <strong>民族店</strong>
+        <span>嘉義市民族路198號</span>
+        <a href="https://www.google.com/maps/search/?api=1&query=嘉義市民族路198號" target="_blank" rel="noopener">地圖導航 ↗</a>
+      </div>
+
+      <div class="quick-item">
+        <strong>永和店</strong>
+        <span>嘉義市民族路820號</span>
+        <a href="https://maps.app.goo.gl/HM1z9P3YFXdnXRT5A" target="_blank" rel="noopener">地圖導航 ↗</a>
+      </div>
+
+      <div class="quick-item">
+        <strong>北港店</strong>
+        <span>嘉義市北港路1456號</span>
+        <a href="https://maps.app.goo.gl/LZ7biTL172uozZZo8" target="_blank" rel="noopener">地圖導航 ↗</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <footer><strong>一信檳榔</strong></body></html>
