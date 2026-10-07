@@ -38,7 +38,83 @@ h1{font-size:clamp(52px,6vw,82px));margin:16px 0 8px;color:#f0c95b;letter-spacin
   line-height:1.8;
 }
 .cta{display:inline-block;background:var(--gold);color:#142219;text-decoration:none;font-weight:900;padding:15px 28px;border-radius:999px;box-shadow:0 8px 30px #0005}
-.stores{max-width:1180px;margin:auto;padding:78px 22px 100px}
+/* 關於一信 */
+.about-yixin{
+  background:#f6f0df;
+  color:#14251c;
+  padding:80px 22px;
+  border-top:1px solid #d8b653;
+  border-bottom:1px solid #d8b653;
+}
+
+.about-inner{
+  max-width:1180px;
+  margin:0 auto;
+}
+
+.about-label{
+  color:#b28b2f;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:4px;
+  margin-bottom:12px;
+}
+
+.about-yixin h2{
+  margin:0;
+  font-size:clamp(34px,4vw,52px);
+  line-height:1.3;
+  color:#0d3b29;
+  letter-spacing:2px;
+}
+
+.about-text{
+  max-width:720px;
+  margin:18px 0 34px;
+  color:#59645d;
+  font-size:18px;
+  line-height:1.8;
+}
+
+.about-features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.about-card{
+  min-height:190px;
+  padding:26px;
+  border-radius:18px;
+  background:#0d3b29;
+  color:#f6f0df;
+  border:1px solid #d8b653;
+  box-shadow:0 12px 28px #0002;
+}
+
+.about-card span{
+  display:block;
+  margin-bottom:22px;
+  color:#d8b653;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:3px;
+}
+
+.about-card strong{
+  display:block;
+  color:#e3bd55;
+  font-size:25px;
+  margin-bottom:10px;
+}
+
+.about-card p{
+  margin:0;
+  color:#e8e4d8;
+  font-size:15px;
+  line-height:1.8;
+}
+  .stores{max-width:1180px;margin:auto;padding:78px 22px 100px}
 .section-head{text-align:center;margin-bottom:38px}
 .section-head span{color:#d9b858;letter-spacing:4px;font-size:13px}
 .section-head h2{font-size:40px;margin:10px 0}
@@ -122,6 +198,37 @@ footer strong{
 }
 
 @media(max-width:760px){
+.about-yixin{
+  padding:52px 18px;
+}
+
+.about-yixin h2{
+  font-size:32px;
+  letter-spacing:1px;
+}
+
+.about-text{
+  font-size:16px;
+  margin:14px 0 26px;
+}
+
+.about-features{
+  grid-template-columns:1fr;
+  gap:14px;
+}
+
+.about-card{
+  min-height:auto;
+  padding:22px;
+}
+
+.about-card span{
+  margin-bottom:12px;
+}
+
+.about-card strong{
+  font-size:23px;
+}S
   nav{padding:12px 18px}
 
   .hero{
@@ -200,7 +307,37 @@ footer strong{
     <a class="cta" href="#stores">查看門市據點 ↓</a>
   </div>
 </header>
+<section class="about-yixin">
+  <div class="about-inner">
+    <div class="about-label">01 · ABOUT YI XIN</div>
 
+    <h2>嘉義在地・熟悉的一信</h2>
+
+    <p class="about-text">
+      從一間店到多個據點，把熟悉的招牌與服務留在嘉義街頭。
+    </p>
+
+    <div class="about-features">
+      <div class="about-card">
+        <span>01</span>
+        <strong>品質穩定</strong>
+        <p>重視品質，維持熟悉的一信選擇。</p>
+      </div>
+
+      <div class="about-card">
+        <span>02</span>
+        <strong>貨源充足</strong>
+        <p>多個門市據點，提供便利的在地服務。</p>
+      </div>
+
+      <div class="about-card">
+        <span>03</span>
+        <strong>價格實在</strong>
+        <p>簡單、直接，做嘉義在地熟悉的生意。</p>
+      </div>
+    </div>
+  </div>
+</section>
 <main id="stores" class="stores">
   <div class="section-head">
     <span>STORE LOCATIONS</span>
